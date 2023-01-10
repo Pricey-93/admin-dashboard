@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 20% auto;
+}
+header {
+    background-color: blue;
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr 1fr;
+}
+#search-bar {
+    background-color: brown;
+}
+#notifications-container {
+    background-color: blueviolet;
+}
+#nameplate-container {
+    background-color: aqua;
+}
+button {
+    padding: 15px;
+    border-radius: 5px;
+}
+#navigation-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 20% 1fr;
+    background-color: purple;
+}
+#logo-text, #activity-links, #configuration-links {
+    grid-column: 2 / 3;
+}
+
+main {
+    background-color: black;
+}
+aside {
+    background-color: yellow;
+}
+article {
+    background-color: red;
+}
