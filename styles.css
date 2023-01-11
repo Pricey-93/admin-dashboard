@@ -10,24 +10,64 @@ body {
     grid-template-rows: 20% auto;
 }
 header {
-    background-color: blue;
+    padding: 10px;
     grid-column: 2 / -1;
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: 1fr 1fr;
 }
+#search-form-container {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+}
+#search-outline {
+    height: 20px;
+    width: 40px;
+}
 #search-bar {
-    background-color: brown;
+    background-color: grey;
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 #notifications-container {
     background-color: blueviolet;
+    display: flex;
+    align-items: center;
+}
+#notifications-container > *:not(.profile-img) {
+    padding: 10px;
+}
+.profile-img {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
 }
 #nameplate-container {
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+#nameplate-wrapper {
+    width: 100%;
+    /* background-color: blue; */
+}
+#nameplate-wrapper > img {
+    height: 75px;
+    width: 75px;
+    margin-right: 20px;
+    float: left;
+}
+#creation-btns-container {
+    display: flex;
+    align-items: center;
 }
 button {
     padding: 15px;
     border-radius: 5px;
+    border: none;
+    margin: 10px;
 }
 #navigation-container {
     grid-column: 1 / 2;
