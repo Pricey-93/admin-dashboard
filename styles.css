@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 15% 1fr;
     grid-template-rows: 15% 1fr;
@@ -12,6 +12,7 @@ body {
 header {
     padding: 20px;
     grid-column: 2 / -1;
+    grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: 1fr 1fr;
@@ -44,6 +45,12 @@ header {
     height: 50px;
     background-color: black;
     border-radius: 50%;
+}
+#greeting {
+    /* font-size: calc(0.5rem + 3vw); */
+}
+#username {
+    /* font-size: calc(0.5rem + 3vw); */
 }
 #nameplate-container {
     display: flex;
