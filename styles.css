@@ -97,7 +97,7 @@ main {
     padding: 20px;
     background-color: burlywood;
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 3fr 1fr;
     gap: 10px;
 }
 #projects-container {
