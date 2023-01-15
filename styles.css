@@ -9,7 +9,7 @@ html {
 }
 :root {
     --black-text: #121212;
-    --sub-title-text: #3b9dce;
+    --light-blue-text: #3b9dce;
     --logo-heading-font-family: "norse-bold";
     /* --background-blue: rgb(19, 35, 54); */
     --background-dark-blue: rgb(10,23,39);
@@ -21,7 +21,7 @@ html {
   }
   h2 {
     font-family: var(--heading-font-family);
-    color: var(--sub-title-text);
+    color: var(--light-blue-text);
   }
 body {
     min-height: 100vh;
@@ -32,7 +32,7 @@ body {
     background: linear-gradient(-180deg, rgb(10,23,39) 0%, rgba(0,6,4,1) 98%);
 }
 header {
-    padding: 20px;
+    padding: 20px 5rem;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     display: grid;
@@ -80,7 +80,6 @@ header {
 #nameplate-container {
     display: grid;
     grid-template-columns: 5rem 1fr;
-    gap: 20px 5px;
 }
 
 #nameplate-container > img {
@@ -91,15 +90,20 @@ header {
 #creation-btns-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 button {
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
-    border: none;
+    border: 1px solid grey;
+    color: var(--light-blue-text);
+    background-color: var(--black-text);
+}
+button:hover {
+    border-color: var(--light-blue-text);
 }
 button:not(button:last-of-type) {
-    margin-right: 15px;
+    margin-right: 20px;
 }
 #navigation-container {
     padding: 20px;
@@ -111,7 +115,8 @@ button:not(button:last-of-type) {
 }
 #logo-text {
     font-family: var(--logo-heading-font-family);
-    color: var(--black-text);
+    font-size: 2rem;
+    color: #E1EBEE;
 }
 #activity-links, #configuration-links {
     display: flex;
@@ -127,14 +132,14 @@ main {
     padding: 20px;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 10px;
+    gap: 20px;
 }
 #projects-container {
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-template-rows: max-content;
-    gap: 10px;
+    gap: 20px;
 }
 #projects-title {
     grid-column: 1 / -1;
