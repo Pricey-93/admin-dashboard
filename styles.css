@@ -51,7 +51,7 @@ header {
     color: #E1EBEE;
     background-color: var(--black-text);
     max-height: 1.5rem;
-    width: 100%;
+    flex-basis: 100%;
     border: 1px solid grey;
     outline: none;
     border-radius: 10px;
@@ -64,8 +64,8 @@ header {
     padding: 5px 15px;
 }
 .profile-img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: black;
     border-radius: 50%;
 }
@@ -80,6 +80,7 @@ header {
 #nameplate-container {
     display: grid;
     grid-template-columns: 5rem 1fr;
+    gap: 20px 5px;
 }
 
 #nameplate-container > img {
@@ -104,6 +105,8 @@ button:not(button:last-of-type) {
     padding: 20px;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
     background-color: var(--background-dark-blue);
 }
 #logo-text {
@@ -115,6 +118,10 @@ button:not(button:last-of-type) {
     flex-direction: column;
     font-size: 1.5rem;
     list-style-type: none;
+    gap: 20px;
+}
+#activity-links {
+    margin-bottom: auto;
 }
 main {
     padding: 20px;
@@ -135,6 +142,7 @@ main {
 .card {
     padding: 20px;
     border: 2px solid grey;
+    border-radius: 10px;
 }
 #right-side-container {
     grid-column: 2 / -1;
@@ -148,6 +156,8 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
 }
-#trending-wrapper > img {
+#trending-card > img {
+    margin-right: 20px;
     float: left;
+    background-color: white;
 }
