@@ -12,19 +12,19 @@
 </head>
 <body>
     <header>
+        <ion-icon id="magnifying-glass-icon" name="search-sharp"></ion-icon>
         <form id="search-form-container">
-            <ion-icon name="search-outline" id="search-outline"></ion-icon>
             <input id="search-bar" type="search">
         </form>
         <div id="notifications-container">
-            <ion-icon name="notifications-outline"></ion-icon>
-            <img class="profile-img" src="assets/odin-lined.png">
+            <ion-icon name="notifications-sharp"></ion-icon>
+            <img class="profile-img" src="assets/images/odin-lined.png">
             <p>Odin Odinson</p>
         </div>
         <div id="nameplate-container">
-            <img class="profile-img" src="assets/odin-lined.png"> 
+            <img class="profile-img" src="assets/images/odin-lined.png"> 
             <p id="greeting">Hello there!</p>
-            <h2 id="Username">Odin Odinson(<a>@Pricey-93</a>)</h2>
+            <h2 id="Username">Odin Odinson(<a href="https://github.com/Pricey-93">@Pricey-93</a>)</h2>
         </div>
         <div id="creation-btns-container">
             <button>New</button>
@@ -34,18 +34,31 @@
     </header>
     <nav id="navigation-container">
         <h1 id="logo-text">Odinboard</h1>
+        <ul id="activity-nav-icons">
+            <li><ion-icon name="home-sharp"></ion-icon></li>
+            <li><ion-icon name="id-card-sharp"></ion-icon></li>
+            <li><ion-icon name="chatbox-ellipses-sharp"></ion-icon></li>
+            <li><ion-icon name="time-sharp"></ion-icon></li>
+            <li><ion-icon name="documents-sharp"></ion-icon></li>
+            <li><ion-icon name="people-sharp"></ion-icon></li>
+        </ul>
         <ul id="activity-links">
-            <li><ion-icon name="home-outline"></ion-icon>Home</li>
-            <li><ion-icon name="person-circle-outline"></ion-icon>Profile</li>
-            <li><ion-icon name="chatbox-ellipses-outline"></ion-icon>Messages</li>
-            <li><ion-icon name="time-outline"></ion-icon>History</li>
-            <li><ion-icon name="document-outline"></ion-icon>Tasks</li>
-            <li><ion-icon name="people-circle-outline"></ion-icon>Communities</li>
+            <li>Home</li>
+            <li>Profile</li>
+            <li>Messages</li>
+            <li>History</li>
+            <li>Tasks</li>
+            <li>Communities</li>
+        </ul>
+        <ul id="configuration-nav-icons">
+            <li><ion-icon name="settings-sharp"></ion-icon></li>
+            <li><ion-icon name="help-circle-sharp"></ion-icon></li>
+            <li><ion-icon name="shield-checkmark-sharp"></ion-icon></li>
         </ul>
         <ul id="configuration-links">
-            <li><ion-icon name="settings-outline"></ion-icon>Settings</li>
-            <li><ion-icon name="help-circle-outline"></ion-icon>Support</li>
-            <li><ion-icon name="shield-checkmark-outline"></ion-icon>Privacy</li>
+            <li>Settings</li>
+            <li>Support</li>
+            <li>Privacy</li>
         </ul>
     </nav>
     <main>
@@ -57,31 +70,31 @@
                     Dolor hic veniam magnam, perferendis harum quisquam ipsam suscipit, 
                     dolorum perspiciatis quasi inventore ullam vel quis maiores odio mollitia cum quia exercitationem.</p>
             </article>
-            <article id="card-two" class="project card">
+            <article class="project card">
                 <h3>less cool project</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Dolor hic veniam magnam, perferendis harum quisquam ipsam suscipit, 
                     dolorum perspiciatis quasi inventore ullam vel quis maiores odio mollitia cum quia exercitationem.</p>
             </article>
-            <article id="card-three" class="project card">
+            <article class="project card">
                 <h3>another project</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Dolor hic veniam magnam, perferendis harum quisquam ipsam suscipit, 
                     dolorum perspiciatis quasi inventore ullam vel quis maiores odio mollitia cum quia exercitationem.</p>
             </article>
-            <article id="card-four" class="project card">
+            <article class="project card">
                 <h3>wow much project</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Dolor hic veniam magnam, perferendis harum quisquam ipsam suscipit, 
                     dolorum perspiciatis quasi inventore ullam vel quis maiores odio mollitia cum quia exercitationem.</p>
             </article>
-            <article id="card-five" class="project card">
+            <article class="project card">
                 <h3>epic project</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Dolor hic veniam magnam, perferendis harum quisquam ipsam suscipit, 
                     dolorum perspiciatis quasi inventore ullam vel quis maiores odio mollitia cum quia exercitationem.</p>
             </article>
-            <article id="card-six" class="project card">
+            <article class="project card">
                 <h3>wow a project</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Dolor hic veniam magnam, perferendis harum quisquam ipsam suscipit, 
@@ -118,6 +131,6 @@
         </div>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
