@@ -11,7 +11,6 @@ html {
     --black-text: #121212;
     --light-blue-text: #3b9dce;
     --logo-heading-font-family: "norse-bold";
-    /* --background-blue: rgb(19, 35, 54); */
     --background-dark-blue: rgb(10,23,39);
     font-size: calc(0.625rem + 0.4vw);
 }
@@ -23,6 +22,9 @@ html {
     font-family: var(--heading-font-family);
     color: var(--light-blue-text);
   }
+  li {
+    list-style-type: none;
+  }
 body {
     min-height: 100vh;
     display: grid;
@@ -32,6 +34,7 @@ body {
     background: linear-gradient(-180deg, rgb(10,23,39) 0%, rgba(0,6,4,1) 98%);
 }
 header {
+    position: relative;
     padding: 20px 5rem;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
@@ -39,26 +42,28 @@ header {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+#magnifying-glass-icon {
+    position: absolute;
+    top: 1.5rem;
+    left: 3rem;
+}
 #search-form-container {
     display: flex;
 }
-#search-outline {
-    height: 20px;
-    width: 40px;
-}
 #search-bar {
-    margin-top: 3px;
     color: #E1EBEE;
     background-color: var(--black-text);
-    max-height: 1.5rem;
+    max-height: 1.7rem;
     flex-basis: 100%;
     border: 1px solid grey;
     outline: none;
     border-radius: 10px;
+    font-size: large;
 }
 #notifications-container {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-start;
 }
 #notifications-container > *:not(.profile-img) {
     padding: 5px 15px;
@@ -109,24 +114,41 @@ button:not(button:last-of-type) {
     padding: 20px;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    grid-template-rows: 2rem 1fr 0.5fr 0.5fr 1fr;
+    gap: 20px;
     background-color: var(--background-dark-blue);
 }
 #logo-text {
     font-family: var(--logo-heading-font-family);
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #E1EBEE;
+    grid-column: 2 / 3;
+}
+#activity-nav-icons {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+}
+#configuration-nav-icons {
+    grid-column: 1/ 2;
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+}
+ion-icon {
+    font-size: 1.4rem;
 }
 #activity-links, #configuration-links {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    list-style-type: none;
-    gap: 20px;
+    font-size: 1.4rem;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
 }
-#activity-links {
-    margin-bottom: auto;
+#configuration-links {
+    grid-row: 4 / 5;
 }
 main {
     padding: 20px;
@@ -148,6 +170,12 @@ main {
     padding: 20px;
     border: 2px solid grey;
     border-radius: 10px;
+}
+.project > p {
+    padding-top: 2rem;
+}
+.project {
+    border-left: 10px solid var(--light-blue-text);
 }
 #right-side-container {
     grid-column: 2 / -1;
